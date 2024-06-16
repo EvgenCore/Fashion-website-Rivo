@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rivo</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <!-- HEADER + 1 CONTAINER -->
+    <section class=" max-h-[1117px] pt-[55px] pb-[130px] bg-lightGreen px-[150px]  lg12:px-[100px] md:px-[50px] sm:px-[10px]">
+
+        <!-- HEADER -->
+        <header class="flex gap-5 items-center  justify-between">
+
+            <!-- LOGO -->
+            <div>
+                <a href="#!"><img src="./assets/Logo.png" class="min-h-[30px] min-w-[93px] max-w-full object-cover" alt="Logo"></a>
+            </div>
+
+            <!-- NAV -->
+            <nav class="maxlg:ml-[250px] lg15:ml-[160px] lg12:ml-[100px] md:hidden">
+                <ul class="flex maxlg:text-[22px] text-[18px] lg15:text-[18px]  text-darkGreen font-poppins font-medium tracking-wide gap-x-[57px] uppercase">
+                    <li><a href="#!" class="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-darkGreen after:scale-0 hover:after:scale-100 after:transition-transform">Home</a></li>
+                    <li><a href="#!" class="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-darkGreen after:scale-0 hover:after:scale-100 after:transition-transform">Shop</a></li>
+                    <li><a href="#!" class="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-darkGreen after:scale-0 hover:after:scale-100 after:transition-transform">Features</a></li>
+                    <li><a href="#!" class="relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-darkGreen after:scale-0 hover:after:scale-100 after:transition-transform">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- MOBILE NAV -->
+            <nav id="mobile-menu" class="fixed left-0 top-0 right-0 bottom-0 animate-fadeIn hidden items-center justify-center bg-lightGreen">
+                <ul class="flex flex-col items-center text-[30px] gap-x-[57px] gap-y-[50px] text-darkGreen font-poppins font-medium tracking-wide uppercase">
+                    <li>
+                        <a href="#" >Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- PERSONAL AREA -->
+            <div class="flex items-center gap-[59px] lg12:gap-[35px] md:hidden">
+                <div>
+                    <img src="./assets/shopBag.png" class="min-h-[32px] min-w-[32px] max-w-full active:scale-95 cursor-pointer" alt="Shoping Bag">
+                </div>
+                
+                <button class="px-[39px] py-[9px] lg12:px-[30px] border-2 font-poppins border-darkGreen active:scale-95 hover:bg-darkGreen hover:text-white transition-colors rounded-[3px] text-[20px] font-medium uppercase text-darkGreen">Login</button>
+            </div>
+
+            <!-- BURGER -->
+            <button id="burger" class="hidden  md:block  active group relative h-[20px] w-[30px] ">
+                <span class="absolute left-0 h-[1px] w-full bg-darkGreen top-0 group-[.active]:translate-y-2 group-[.active]:rotate-45 transition-transform"></span>
+                <span class="absolute left-0 h-[1px] w-full bg-darkGreen top-1/2 group-[.active]:opacity-0 transition-opacity"></span>
+                <span class="absolute left-0 h-[1px] w-full bg-darkGreen bottom-0 group-[.active]:-translate-y-[9px] group-[.active]:-rotate-45 transition-transform"></span>
+            </button>
+
+        </header>
+
+        <!-- 1 CONTAINER - Discover and Find Your Own Fashion! -->
+        <section class="mt-[130px] md:mt-[80px]" >
+
+            <div class="flex md:flex-wrap justify-center gap-x-20">
+                
+                <!-- LEFT PART -->
+                <div  class="max-w-[649px] md:max-w-full lg12:max-w-[550px]">
+
+                    <h1 class="text-[86px] lg15:text-[70px] lg12:text-[50px] sm:text-[50px] xs:text-[40px] md:text-center mb-4 leading-[125%] text-darkGreen font-rufina font-bold text-ru">Discover and Find Your Own Fashion!</h1>
+                    <p class="text-[24px] lg15:text-[20px] lg12:text-[16px] xs:text-[18px] md:text-center  mb-[55px] md:mb-[40px] font-poppins leading-[220%] font-medium text-[#267D49]">Explore our curated collection of stylish clothing and accessories tailored to your unique taste.</p>
+                    <div class="md:w-full  md:flex md:justify-center">
+                        <button class="font-poppins rounded-[3px] font-medium mx-auto text-[20px] xs:text-[16px] text-white px-[60px] py-[22px] active:scale-95 hover:bg-[#296240] bg-darkGreen shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">Explore Now</button>
+                    </div>
+                    
+                </div>
+                
+                <!-- RIGHT PART -->
+                <div class=" md:w-full md:mt-[40px]  maxlg:min-w-[570px] lg15:min-w-[450px] lg15:h-[570px] lg12:min-w-[400px] sm:hidden lg12:h-[505px]   flex justify-center  h-[717] " >
+                    <img src="./assets/Group 48.png" alt="">
+                </div> 
+                           
+            </div>
+        </section>
+
+    </section>
+
+
+    <!-- 2 CONTAINER - Best selling -->
+    <section  class="bg-white px-[150px] lg12:px-[100px] md:px-[50px] sm:px-[10px] pt-[130px]">
+
+        <!-- CONTAINER'S HEADING -->
+        <section>
+            <h2 class="text-darkGreen text-[64px] xs:text-[40px] font-medium font-robotoSlab text-center">Best selling</h2>
+            <p class="text-darkGreen text-[22px] xs:text-[18px] font-medium font-poppins text-center mt-[28px]">Get in on the trend with our curated selection of best-selling styles.</p>
+        </section>
+
+        <!-- CARDS -->
+        <section data-aos="zoom-in" data-aos-duration="800" class="flex md:flex-wrap md:gap-10 justify-center  gap-[60px] mt-[80px]">
+            <!-- 1 CARD -->
+            <div class="hover:scale-105 active:scale-100 transition-transform">
+                <div class="max-w-[350px]">
+                    <a href="#" ><img src="./assets/Group 50.png"  alt="woman"></a>
+                    
+                </div>
+                <div class="mt-[40px]">
+                    <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Regular Fit Long Sleeve Top</p>
+                    <div class="flex justify-evenly  mt-2">
+                        <p class="font-poppins font-medium text-[22px] text-[#454545] ">$38.99</p>
+                        <img src="./assets/Line 5.png" alt="">
+                        <div class="flex items-center">
+                           <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">5.0</p> 
+                           <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- 2 CARD -->
+            <div class="hover:scale-105 active:scale-100 transition-transform">
+                <div class="max-w-[350px]">
+                    <a href="#"><img src="./assets/Group 51.png" alt="woman"></a>
+                    
+                </div>
+                <div class="mt-[40px]">
+                    <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Black Crop Tailored Jacket</p>
+                    <div class="flex justify-evenly  mt-2">
+                        <p class="font-poppins font-medium text-[22px] text-[#454545] ">$62.99</p>
+                        <img src="./assets/Line 5.png" alt="">
+                        <div class="flex items-center">
+                           <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">4.9</p> 
+                           <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- 3 CARD -->
+            <div class="hover:scale-105 active:scale-100 transition-transform">
+                <div class="max-w-[350px]">
+                    <a href="#"><img src="./assets/Group 52.png" alt="woman"></a>
+                 
+                </div>
+                <div class="mt-[40px]">
+                    <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Textured Sunset Shirt</p>
+                    <div class="flex justify-evenly  mt-2">
+                        <p class="font-poppins font-medium text-[22px] text-[#454545] ">$49.99</p>
+                        <img src="./assets/Line 5.png" alt="">
+                        <div class="flex items-center">
+                           <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">5.0</p> 
+                           <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BUTTON -->
+        <section class="w-full flex justify-center mt-[50px]">
+            <button id="bestSellingButton" class="flex justify-center items-center border-2 border-darkGreen hover:bg-darkGreen active:scale-95 transition-colors rounded-[3px] px-[55px] py-[15px]">
+                <p id="bestSellingButtonP" class="font-poppins font-medium text-[22px]   text-darkGreen">See all</p>
+                <i id="bestSellingButtonImg" class="fa-solid fa-arrow-right text-darkGreen  text-[20px] ml-[22px]"></i>
+            </button>
+        </section>
+
+    </section>
+
+
+    <!-- 3 CONTAINER - Our products -->
+    <section data-aos="zoom-in" data-aos-duration="800" class="px-[150px] lg12:px-[100px] md:px-[50px] sm:px-[10px] pt-[130px] ">
+        <div >
+            <h2 class="sectionTitle text-center">Our products</h2>
+
+            <!-- Tabs -->
+            <div>
+                <!-- Tabs Header -->
+                <div class="flex md:flex-wrap md:gap-[40px] mb-[80px] justify-center gap-[100px] mt-[70px]">
+                    <button class="tabTrigger flex ">Sale</button>
+                    <button class="tabTrigger active flex">Hot</button>
+                    <button class="tabTrigger flex">New Arrivals</button>
+                    <button class="tabTrigger flex">Accessories</button>
+                </div>
+            
+                <!-- Tab Content Sale -->
+                <div class="tabContent animate-fadeIn hidden flex lg12:flex-wrap justify-center gap-[35px]  xs:gap-y-[60px]">
+
+                    <!-- 1 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <p class="absolute mx-3 text-red-700 text-[33px] font-bold  ">SALE</p>
+                            <a href="#"><img src="./assets/Our_Products/Our_Products9.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Ruby Solid Sweatshirt</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$19.99</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">3.7</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <p class="absolute mx-3 text-red-700 text-[33px] font-bold  ">SALE</p>
+                            <a href="#"><img src="./assets/Our_Products/Our_Products10.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Grayish Pink T-shirt</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$13.99</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">4.2</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <p class="absolute mx-3 text-red-700 text-[33px] font-bold  ">SALE</p>
+                            <a href="#"><img src="./assets/Our_Products/Our_Products11.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Solid White T-shirt</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$9.99</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">4.0</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <p class="absolute mx-3 text-red-700 text-[33px] font-bold  ">SALE</p>
+                            <a href="#"><img src="./assets/Our_Products/Our_Products12.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Gray Shirt</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$25.99</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">5.0</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Tabs Content Hot-->
+                <div class="tabContent animate-fadeIn flex lg12:flex-wrap justify-center gap-[35px]  xs:gap-y-[60px]">
+                    <!-- 1 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="./assets/Our_Products/Our_Products1.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Spread Collar Shirt</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$48.99</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">5.0</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="./assets/Our_Products/Our_Products2.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">White Solid Formal Shirt</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$39.00</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">4.9</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="./assets/Our_Products/Our_Products3.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Shine On Me Blouse</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$42.99</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">4.8</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="./assets/Our_Products/Our_Products4.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Gray Padded Jacket</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$32.99</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">4.7</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- Tabs Content New Arrivals -->
+                <div class="tabContent animate-fadeIn hidden flex lg12:flex-wrap justify-center gap-[35px] xs:gap-y-[60px]">
+
+                    <!-- 1 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="./assets/Our_Products/Our_Products5.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Printed Loose T-shirt</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$39.99</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">5.0</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="./assets/Our_Products/Our_Products6.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Summer Wind Crop Shirt</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$39.95</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">4.7</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="./assets/Our_Products/Our_Products7.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Tailored Jacket</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$46.00</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">4.9</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="./assets/Our_Products/Our_Products8.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Solid Round Neck T-shirt</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$36.00</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">5.0</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Tab Content Accessories -->
+                <div class="tabContent animate-fadeIn hidden flex lg12:flex-wrap justify-center gap-[35px] xs:gap-y-[60px]">
+                    
+                    <!-- 1 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="./assets/Our_Products/Our_Products13.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Rounded Sunglasses</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$40</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">4.4</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="./assets/Our_Products/Our_Products14.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Aviator Sunglasses</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$36.25</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">4.7</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="./assets/Our_Products/Our_Products15.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Half-Round Sunglasses</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$42.25</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">4.1</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 card -->
+                    <div class="hover:scale-105 active:scale-100 transition-transform">
+                        <div class="overflow-hidden">
+                            <a href="#"><img src="./assets/Our_Products/Our_Products16.png" class="max-w-full w-full h-auto" alt="woman"></a>
+                        </div>
+                        <div class="mt-[20px]">
+                            <p class="font-poppins text-[22px] font-semibold text-[#373737] text-center">Oval Sunglasses</p>
+                            <div  class="flex justify-evenly  mt-2">
+                                <p class="font-poppins font-medium text-[22px] text-[#454545] ">$55.20</p>
+                                <img src="./assets/Line 5.png" alt="">
+                                <div class="flex items-center">
+                                   <p class="font-poppins font-medium text-[22px] text-[#454545] mr-2">50</p> 
+                                   <a href="#"><i class="fa-solid fa-star text-[#F5D426] hover:animate-spin-once" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 4 CONTAINER - Exclusive offer -->
+    <section data-aos="zoom-in" data-aos-duration="800" class=" px-[150px] lg12:px-[100px] md:px-[50px] sm:px-[10px] pt-[130px]  ">
+
+        <section class="bg-lightGreen h-[596px] grid grid-cols-2   md:grid-cols-1 gap-[10px]">
+
+            <section class="ml-[41px] lg15:ml-[20px] grid place-items-center overflow-hidden  md:hidden z-10 ">
+                <img src="./assets/Exclusive offer img.png" class=" w-full h-full object-cover" alt="woman">
+            </section>
+
+            <section class="flex justify-center items-center z-20">
+                <div>
+                    <!-- HEADING -->
+                    <h2 class="font-robotoSlab font-bold text-[46px] lg12:text-[40px] sm:text-[35px] xs:text-[35px]  md:text-center  text-darkGreen">Exclusive offer</h2>
+                    <div class="max-w-[589px] lg15:max-w-[500px] lg12:max-w-[400px] xs:mx-[20px] mt-[40px]">
+                        <p class="font-poppins font-medium text-[22px] sm:text-[18px] xs:text-[18px] text-darkGreen md:text-center  ">Unlock the ultimate style upgrade with our exclusive offer Enjoy savings of up to 40% off on our latest New Arrivals</p>
+                    </div>
+    
+                    <!-- TIMER -->
+                    <div class="flex xs:flex-wrap xs:gap-y-[20px] md:justify-center mt-[40px] gap-x-[35px] lg15:gap-x-[30px] lg12:gap-x-[20px] ">
+    
+                        <div class="w-[100px] lg12:w-[80px] h-[100px] lg12:h-[80px] bg-white  flex justify-center items-center">
+                            <div>
+                                <p id="daysCountdown" class=" font-poppins font-semibold text-[32px] lg12:text-[25px] text-center  text-darkGreen"></p>
+                                <p class="font-poppins font-medium text-[16px] text-darkGreen text-center">Days</p>
+                            </div>
+                        </div>
+    
+                        <div class="w-[100px] lg12:w-[80px] h-[100px] lg12:h-[80px] bg-white flex justify-center items-center">
+                            <div>
+                                <p id="hoursCountdown" class="font-poppins font-semibold text-[32px] lg12:text-[25px] text-darkGreen text-center"></p>
+                                <p class="font-poppins font-medium text-[16px] text-darkGreen text-center">Hours</p>
+                            </div>
+                        </div>
+    
+                        <div class="w-[100px] lg12:w-[80px] h-[100px] lg12:h-[80px] bg-white flex justify-center items-center">
+                            <div>
+                                <p id="minCountdown" class="font-poppins font-semibold text-[32px] lg12:text-[25px] text-darkGreen text-center"></p>
+                                <p class="font-poppins font-medium text-[16px] text-darkGreen text-center">Min</p>
+                            </div>
+                        </div>
+    
+                        <div class="w-[100px] lg12:w-[80px] h-[100px] lg12:h-[80px] bg-white flex justify-center  items-center">
+                            <div>
+                                <p id="secCountdown" class="font-poppins font-semibold text-[32px] lg12:text-[25px] text-darkGreen text-center"></p>
+                                <p class="font-poppins font-medium text-[16px] text-darkGreen text-center">Sec</p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <!-- BUTTON -->
+                     <div class="w-full flex md:justify-center">
+                         <div class="w-[235px] xs:w-[200px] h-[74px] bg-darkGreen rounded-[3px] flex justify-center items-center  mt-[40px] active:scale-95 hover:bg-[#296240] cursor-pointer">
+                             <a href="#" class="font-poppins font-medium text-white text-[20px]">BUY NOW</a>
+                         </div>
+
+                     </div>
+                </div>
+                
+            </section>
+        </section>
+    </section>
+
+
+    <!-- 5 CONTAINER - Designer Clothes For You -->
+    <section data-aos="zoom-in" data-aos-duration="800" class=" px-[150px] lg12:px-[100px] md:px-[50px] sm:px-[10px] pt-[130px]  ">
+
+        <!-- HEADING -->
+        <section>
+            <h2 class="sectionTitle text-center">Designer Clothes For You</h2>
+            <p class="text-darkGreen text-[22px] xs:text-[18px] font-medium font-poppins text-center mt-[28px]  ">Immerse yourself in the world of luxury fashion with our meticulously crafted designer clothes!</p>
+        </section>
+
+        <!-- CONTAINER CONTENT -->
+        <section class="flex md:flex-wrap md:gap-10 justify-center   gap-[44px] mt-[80px]">
+
+            <!-- 1 CARD -->
+            <div class="w-[430px] lg15:w-[350px] lg12:w-[300px] hover:scale-105 active:scale-100 transition-transform ">
+                
+                <div >
+                    <a href="#"><img src="./assets/Group 53.png" alt="woman"></a>
+                </div>
+
+                <div class="mt-[25px] text-center">
+                    <h4 class="font-poppins text-[30px] font-semibold text-[#373737]">Accessories</h4>
+                    <p class="font-poppins font-medium text-[22px] lg12:text-[17px] text-[#373737] leading-[143%] mt-[5px]">Complete your ensemble with designer accessories such as handbags, scarves, belts, and hats.</p>
+                </div>
+            </div>
+
+            <!-- 2 CARD -->
+            <div class="w-[430px] lg15:w-[350px] lg12:w-[300px] hover:scale-105 active:scale-100 transition-transform">
+                
+                <div >
+                    <a href="#"><img src="./assets/Group 54.png" alt="woman"></a>
+                </div>
+
+                <div class="mt-[25px] text-center">
+                    <h4 class="font-poppins text-[30px] font-semibold text-[#373737]">Dresses</h4>
+                    <p class="font-poppins font-medium text-[22px] lg12:text-[17px] text-[#373737] leading-[143%] mt-[5px]">Explore a stunning range of designer dresses, including evening gowns and chic day dresses.</p>
+                </div>
+            </div>
+
+            <!-- 3 CARD -->
+            <div class="w-[430px] lg15:w-[350px] lg12:w-[300px] hover:scale-105 active:scale-100 transition-transform">
+                
+                <div >
+                    <a href="#"><img src="./assets/Group 55.png" alt="woman"></a>
+                </div>
+
+                <div class="mt-[25px] text-center">
+                    <h4 class="font-poppins text-[30px] font-semibold text-[#373737]">Outerwear</h4>
+                    <p class="font-poppins font-medium text-[22px] lg12:text-[17px] text-[#373737] leading-[143%] mt-[5px]">Browse luxurious designer coats, jackets, and blazers to stay stylishly warm during colder seasons.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <!-- 6 CONTAINER - Feedback Corner -->
+    <section data-aos="zoom-in" class=" px-[150px] lg12:px-[100px] md:px-[50px] sm:px-[10px] pt-[130px] pb-[130px] ">
+
+        <!-- HEADING -->
+        <section>
+            <h2 class="sectionTitle text-center">Feedback Corner</h2>
+        </section>
+
+        <!-- SECTION CONTENT -->
+        <section class=" pt-[110px]">
+
+            <!-- CARDS 1 -->
+            <div id="feedbackCards1" class="flex md:flex-wrap animate-fadeIn justify-center  gap-[35px] ">
+
+                <!-- 1 CARD -->
+                <div class=" shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] w-[400px] rounded-[3px] pb-[20px] px-[22px] hover:bg-lightGreen cursor-default">
+                    <img src="./assets/“.png" class="pt-[22px]" alt="">
+                    <h5 class="pt-[30px] font-robotoSerif font-semibold text-[22px] text-darkGreen">Emily Wilson</h5>
+                    <p class="pt-[30px] font-poppins font-medium text-[16px]">The customer experience was exceptional from start to finish. The website is user-friendly, the checkout process was smooth, and the clothes I ordered fit perfectly. I'm beyond satisfied!</p>
+                </div>
+
+                <!-- 2 CARD -->
+                <div class=" shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] w-[400px] rounded-[3px] pb-[20px] px-[22px] hover:bg-lightGreen cursor-default">
+                    <img src="./assets/“.png" class="pt-[22px]" alt="">
+                    <h5 class="pt-[30px] font-robotoSerif font-semibold text-[22px] text-darkGreen">Sarah Thompson</h5>
+                    <p class="pt-[30px] font-poppins font-medium text-[16px]">I absolutely love the quality and style of the clothing I purchased from this website. customer service was outstanding, and I received my order quickly. Highly recommended!</p>
+                </div>
+
+                <!-- 3 CARD -->
+                <div class=" shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] w-[400px] rounded-[3px] pb-[20px] px-[22px] hover:bg-lightGreen cursor-default">
+                    <img src="./assets/“.png" class="pt-[22px]" alt="">
+                    <h5 class="pt-[30px] font-robotoSerif font-semibold text-[22px] text-darkGreen">Olivia Martinez</h5>
+                    <p class="pt-[30px] font-poppins font-medium text-[16px]">I had a great experience shopping on this website. The clothes I bought are fashionable and comfortable. Highly satisfied!</p>
+                </div>
+            </div>
+
+            <!-- CARDS 2 -->
+            <div id="feedbackCards2" class="hidden md:flex-wrap animate-fadeIn justify-center  lg gap-[35px] ">
+                <!-- 1 CARD -->
+                <div class=" shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] w-[400px] rounded-[3px] pb-[20px] px-[22px] hover:bg-lightGreen cursor-default">
+                    <img src="./assets/“.png" class="pt-[22px]" alt="">
+                    <h5 class="pt-[30px] font-robotoSerif font-semibold text-[22px] text-darkGreen">Leslie Marks</h5>
+                    <p class="pt-[30px] font-poppins font-medium text-[16px]">I'm incredibly impressed with the service and quality of the clothes I received.The delivery was quick, and the items matched the description perfectly. The fabrics are high-quality.</p>
+                </div>
+
+                <!-- 2 CARD -->
+                <div class=" shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] w-[400px] rounded-[3px] pb-[20px] px-[22px] hover:bg-lightGreen cursor-default">
+                    <img src="./assets/“.png" class="pt-[22px]" alt="">
+                    <h5 class="pt-[30px] font-robotoSerif font-semibold text-[22px] text-darkGreen">Dana Russo</h5>
+                    <p class="pt-[30px] font-poppins font-medium text-[16px]">Shopping on this site has been a delightful experience. The website is easy to navigate, the search filters work perfectly, and the product images are clear and detailed. </p>
+                </div>
+
+                <!-- 3 CARD -->
+                <div class=" shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] w-[400px] rounded-[3px] pb-[20px] px-[22px] hover:bg-lightGreen cursor-default">
+                    <img src="./assets/“.png" class="pt-[22px]" alt="">
+                    <h5 class="pt-[30px] font-robotoSerif font-semibold text-[22px] text-darkGreen">Florence Webster</h5>
+                    <p class="pt-[30px] font-poppins font-medium text-[16px]">I'm always excited to see the latest collections on this site. The styles are trendy and unique, and I often get compliments on the outfits I purchase here.</p>
+                </div>
+
+            </div>
+
+            <!-- TOGGLE CARDS -->
+            <div class="flex gap-[50px] justify-center mt-[125px]">
+                <div id="feedbackButton" class="flex justify-center items-center text-darkGreen hover:bg-lightGreen active:scale-95 w-[40px] h-[40px] rounded-[3px] cursor-pointer shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div id="feedbackButton2" class="flex justify-center items-center text-darkGreen hover:bg-lightGreen active:scale-95 w-[40px] h-[40px] rounded-[3px] cursor-pointer shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px]">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="px-[150px] bg-darkGreen lg12:px-[100px] md:px-[50px] sm:px-[10px] pt-[105px] ">
+        <section class="flex-wrap justify-center ">
+            <section class="flex justify-between lg15:flex-wrap sm:justify-center">
+
+                <!-- SOCIAL CONTAINER -->
+                <section class="mr-[110px] sm:mr-[50px] xs:mr-0 sm:mb-[40px]">
+                    <div class="flex xs:justify-center">
+                        <a href="#"><img src="./assets/Footer-Logo.png"  alt=""></a>
+                    </div>
+                    
+                    <div class="mt-[40px] ">
+                        <p class="font-robotoSlab font-medium text-[22px] text-white xs:text-center">Social Media</p>
+                        <div class="flex gap-[36px] mt-[24px] text-center">
+                            <a href="#" class="hover:scale-105 active:scale-95"><img src="./assets/Facebook.png" alt="Facebook"></a>
+                            <a href="#" class="hover:scale-105 active:scale-95"><img src="./assets/Twitter.png" alt="Twitter"></a>
+                            <a href="#" class="hover:scale-105 active:scale-95"><img src="./assets/Instagram.png" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </section>
+    
+                <!-- LINKS CONTAINER -->
+                <section class="flex gap-[80px] xs:mt-[30px] sm:gap-[70px] xs:gap-[50px] mr-[100px] lg12:mr-0 ">
+                    <section>
+                        <h4 class="font-robotoSlab font-medium text-[22px] text-white uppercase">Shop</h4>
+                        <ul class="font-poppins font-medium text-[18px] text-white tracking-wide mt-[25px]">
+                            <a href="#" ><li class="hover:scale-105 active:scale-95">Products</li></a>
+                            <a href="#"><li class="mt-[18px] hover:scale-105 active:scale-95">Overview</li></a>
+                            <a href="#"><li class="mt-[18px] hover:scale-105 active:scale-95">Pricing</li></a>
+                            <a href="#"><li class="mt-[18px] hover:scale-105 active:scale-95">Releases</li></a>
+                        </ul>
+                    </section>
+    
+                    <section >
+                        <h4 class="font-robotoSlab font-medium text-[22px] text-white uppercase">Company</h4>
+                        <ul class="font-poppins font-medium text-[18px] text-white tracking-wide mt-[25px]">
+                            <a href="#"><li class="hover:scale-105 active:scale-95">About us</li></a>
+                            <a href="#"><li class="mt-[18px] hover:scale-105 active:scale-95">Contact</li></a>
+                            <a href="#"><li class="mt-[18px] hover:scale-105 active:scale-95">News</li></a>
+                            <a href="#"><li class="mt-[18px] hover:scale-105 active:scale-95">Support</li></a>
+                        </ul>
+                    </section>
+                </section>
+    
+                <!-- EMAIL CONTAINER -->
+                <section class="lg12:mt-[40px] sm:mt-[70px]">
+                    <form >
+                        <label for="" >
+                            <h4 class="font-robotoSlab font-medium text-[22px] text-white xs:text-center uppercase">Stay up to date</h4>
+                            <div class="flex mt-[38px]">
+                                <input placeholder="Enter your email" class="h-[57px] border-lightGreen pl-[28px] xs:pl-[15px] pt-[14px] pb-[17px] w-[320px] xs:w-[180px] text-white placeholder-white bg-darkGreen rounded-l-[3px] border-[3px]" type="text">
+                                <button class="bg-lightGreen uppercase text-darkGreen font-poppins font-medium text-[20px] pt-[14px] pb-[13px] px-[21px] ">Submit</button>
+                            </div>
+                        </label>
+                    </form>
+                </section>
+
+            </section>
+            <section class="flex items-center justify-start sm:justify-center mt-[120px] ">
+                <img src="./assets/Line 7.png" class="h-[2px] w-[72%] lg12:w-[65%] md:w-[55%] sm:hidden" alt="">
+                <section class="flex  gap-[35px] ml-[35px] sm:ml-0 font-poppins font-semibold text-white text-[20px] xs:text-[16px]">
+                    <a href="#" class="hover:scale-105 active:scale-95"><p>Terms</p></a>
+                    <a href="#" class="hover:scale-105 active:scale-95"><p>Privacy</p></a>
+                    <a href="#" class="hover:scale-105 active:scale-95"><p>Cookies</p></a>
+                </section>
+            </section>
+            
+            <section class="pb-[60px] mt-[80px]">
+                <p class="font-poppins font-semibold text-white text-[16px] xs:text-[13px] text-center">This site was made for educational purposes in order to demonstrate my abilities in creating sites.</p>
+            </section>
+            
+        </section>
+    </footer> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

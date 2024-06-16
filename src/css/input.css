@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .sectionTitle{
+        @apply font-robotoSlab font-medium text-[50px] text-darkGreen xs:text-[40px]
+    }
+    .tabTrigger{
+        @apply text-[#454545] text-[25px] sm:text-[22px] font-poppins font-medium
+    }
+    .tabTrigger.active{
+        @apply text-darkGreen border-b-2 border-darkGreen pb-[3px] 
+    }
+}

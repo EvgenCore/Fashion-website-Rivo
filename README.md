@@ -1,1 +1,1 @@
-# Fashion-website-Rivo
+# Fashion-website-Vibe
